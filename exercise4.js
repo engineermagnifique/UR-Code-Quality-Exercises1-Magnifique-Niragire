@@ -1,11 +1,5 @@
 function findEvenNumbers(inputNumbers = []) {
-  const evenNumbers = [];
-
-  for (const number of inputNumbers) {
-    if (number % 2 === 0) {
-      evenNumbers.push(number);
-    }
-  }
-
-  return evenNumbers;
+  return inputNumbers
+  .filter((number)=>number%2===0);
 }
+console.log(findEvenNumbers([2,5,7,6,4,8]));
